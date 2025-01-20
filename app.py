@@ -3,6 +3,9 @@ import requests
 from bs4 import BeautifulSoup
 import os
 
+# Set page configuration
+st.set_page_config(page_title="Web Page Analyzer", layout="wide")
+
 def fetch_url_content(url):
     try:
         response = requests.get(url)
