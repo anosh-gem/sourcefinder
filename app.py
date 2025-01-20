@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import os
 
-# Set page configuration
+# Developed by Anosh Gem
 st.set_page_config(page_title="Web Page Analyzer", layout="wide")
 
 def fetch_url_content(url):
@@ -29,6 +29,15 @@ def extract_css_and_js(html):
 
 def main():
     st.title("Web Page Analyzer")
+    
+    # Developed by Anosh Gem
+    st.markdown("""
+    <div style="text-align: center;">
+        <h3>Developed by Anosh Gem</h3>
+        <h4>For Project: MINU</h4>
+    </div>
+    """, unsafe_allow_html=True)
+    
     url = st.text_input("Enter URL", "https://example.com")
 
     if st.button("Fetch"):
@@ -57,5 +66,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
